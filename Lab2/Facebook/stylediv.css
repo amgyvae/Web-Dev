@@ -1,0 +1,212 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial";
+}
+
+.facebook-page {
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color:aliceblue;
+    min-height: 100vh;
+    padding-top: 10vh;
+}
+
+.facebook-page .container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 980px;
+    margin: auto;
+}
+
+
+.container .textbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.textbox .logo {
+    font-size: 3.5rem;
+    color: #1877f2;
+}
+
+.textbox p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5rem;
+    max-width: 400px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    width: 396px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 
+    0 8px 16px rgb(0 0 0 / 10%);
+}
+
+form input {
+    border: 1px solid #dddfe2;
+    outline: none;
+    padding: 8px 16px;
+    margin-bottom: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+
+form input:focus {
+    border: 1.8px solid #1877f2;
+}
+
+form .login {
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #1877f2;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+form .login:hover {
+    cursor: pointer;
+}
+
+form a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: #1877f2;
+    padding-top: 12px;
+}
+
+form hr {
+    background-color: #f7f7f7;
+    margin: 1rem;
+}
+
+form .create-account {
+    outline: none;
+    border: none;
+    background: #06b909;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+}
+
+form .create-account:hover {
+    cursor: pointer;
+}
+
+.login p {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.login span {
+    font-weight: 600;
+}
+
+@media (max-width: 820px) {
+    html {
+        font-size: 75%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textbox {
+        margin: 0;
+        text-align: center;
+    }
+
+    form {
+        width: 300px;
+        height: fit-content;
+    }
+
+    form .login {
+        font-size: 1.5rem;
+    }
+
+    form a {
+        font-size: 1.5rem;
+    }
+
+    form .create-account {
+        font-size: 1.2rem;
+    }
+
+    form input {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .login p {
+        font-size: 1rem;
+    }
+}
+
+.footer-info {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+    display: grid;
+    justify-content: center;
+    gap: 5px;
+    font-size: 13px;
+    color: #dddfe2;
+}
+
+.footer-info p, .footer-info p a {
+    color: #a5a5a5;
+    font-size: 13px;
+}
+.footer-info p:first-child {
+    border-bottom: 1px solid #a5a5a5;
+    padding-bottom: 5px;
+}
+
+.footer-info p:nth-child(2) {
+    margin-top: 5px;
+}
+
+.footer-info button {
+    border: 1px solid #a5a5a5;
+    color: #a5a5a5;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.bg-color {
+    background-color: #ebebeb;
+    width: 100%;
+    min-height: 30vh; /* Increase this value as needed */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
