@@ -1,35 +1,103 @@
-html, body {
-    height: 100%;
-}
-
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
-    min-height: 100vh; 
-    background-color: white; 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    box-sizing: border-box;
 }
-
-.block1 {
+.header {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
+    align-items: center;
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../Microsoft/img/pic1.webp);
+    background-size: 100%;
+    padding: 60px 80px;
+}
+.hero-text {
+    background: white;
+    padding: 30px;
+    width: 40%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.hero-text h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.hero-text p {
+    font-size: 1.1em;
+    color: #333;
+}
+.hero-text button {
+    background: #0078d4;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.hero-image img {
+    max-width: 90%;
+    height: auto;
+}
+.icon-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+.icon {
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-
-.nav-links a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.product-card {
+    width: 250px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    background: white;
+}
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+.product-card button {
+    background: #0078d4;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
-.nav-links a:hover {
-    color: #0067b8;
+.logo img {
+    width: 150px;
 }
 
 .block2 {
@@ -44,79 +112,4 @@ body {
 
 .block2 a {
     color: white
-}
-
-.logo {
-    margin-left: 20px;
-}
-
-.hero-section {
-    position: relative; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    min-height: 500px;
-    background-image: url('../Microsoft/img/pic1.webp'); 
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 50px;
-}
-
-.hero-content {
-    position: absolute; 
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%); 
-    background-color: white; 
-    color: black;
-    padding: 20px;
-    max-width: 400px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
-
-.hero-content h2 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.shop-btn {
-    background-color: #0067b8;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-
-.block4 {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 500px;
-}
-
-.block4 a {
-    text-decoration: none;
-    color: #0067b8;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-
-@media (max-width: 900px) {
-    .hero-section {
-        flex-direction: column; /* Stack image and text */
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .hero-content {
-        max-width: 90%;
-        padding: 15px;
-    }
 }
