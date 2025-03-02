@@ -1,0 +1,11 @@
+<h2>Album List</h2>
+
+<ul *ngIf="albums.length > 0; else noAlbums">
+  <li *ngFor="let album of albums">
+    <a [routerLink]="['/albums', album.id]">{{ album.id }} - {{ album.title }}</a>
+  </li>
+</ul>
+
+<ng-template #noAlbums>
+  <p>No albums found.</p>
+</ng-template>
